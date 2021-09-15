@@ -5,7 +5,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-from confidentials import email, password
+from confidentials import email, password, download_path
 import time
 
 # Recommend reading the main function first.
@@ -66,7 +66,7 @@ if __name__ == '__main__':
     options = webdriver.ChromeOptions()
     options.add_experimental_option("excludeSwitches", ["enable-logging"])
     options.add_experimental_option("prefs", {
-        "download.default_directory": r"D:\DP\certs",
+        "download.default_directory": download_path,
         "download.prompt_for_download": False,
         "download.directory_upgrade": True,
         "safebrowsing.enabled": True,
