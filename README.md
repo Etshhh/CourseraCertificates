@@ -26,6 +26,10 @@ download_path = r"D:\DP\certs"
 ```bash
 python gui.py
 ```
+The script will pause after signing in for the user *(you)* to solve the recaptcha, if one exists, and then press enter back in the terminal you ran the script in for the it to continue.
+
+## Demo
+Here is a screen recording of the script while running. [Video link](https://drive.google.com/file/d/1EowJhiofUwAUa12cAuh_lJWCZLtYrC80/view?usp=sharing)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
